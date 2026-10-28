@@ -1,0 +1,123 @@
+{
+  "adf_tests": [
+    {
+      "variable": "Price Level",
+      "adf_statistic": -1.5303,
+      "p_value": 0.8807,
+      "used_lag": 1,
+      "n_obs": 1854,
+      "critical_values": {
+        "1%": -3.434,
+        "5%": -2.863,
+        "10%": -2.568
+      },
+      "is_stationary": false
+    },
+    {
+      "variable": "Arithmetic Return",
+      "adf_statistic": -43.4387,
+      "p_value": 0.0,
+      "used_lag": 1,
+      "n_obs": 1854,
+      "critical_values": {
+        "1%": -3.434,
+        "5%": -2.863,
+        "10%": -2.568
+      },
+      "is_stationary": true
+    },
+    {
+      "variable": "Spread (bps)",
+      "adf_statistic": -42.857,
+      "p_value": 0.0,
+      "used_lag": 1,
+      "n_obs": 1854,
+      "critical_values": {
+        "1%": -3.434,
+        "5%": -2.863,
+        "10%": -2.568
+      },
+      "is_stationary": true
+    },
+    {
+      "variable": "Order Imbalance (L1)",
+      "adf_statistic": -42.7473,
+      "p_value": 0.0,
+      "used_lag": 1,
+      "n_obs": 1854,
+      "critical_values": {
+        "1%": -3.434,
+        "5%": -2.863,
+        "10%": -2.568
+      },
+      "is_stationary": true
+    }
+  ],
+  "kyle_lambda": {
+    "name": "Kyle's Lambda (Trade Price Impact)",
+    "slope": -0.042554,
+    "intercept": 0.083141,
+    "r_squared": 0.0,
+    "p_value": 0.9515240334190409,
+    "std_err": 0.699894,
+    "t_statistic": -0.061,
+    "n_obs": 1853,
+    "interpretation": "Each 1.0 BTC of signed aggressor flow moves the execution price by $-0.0426. Statistically significant with t=-0.06 (p=9.5152e-01, R^2=0.0000)."
+  },
+  "micro_price_lead_lag": {
+    "name": "Stoikov Micro-Price Lead-Lag",
+    "slope": 1.4998,
+    "intercept": 0.086602,
+    "r_squared": 0.0004,
+    "p_value": 0.41924856431584623,
+    "std_err": 1.8563,
+    "t_statistic": 0.808,
+    "n_obs": 1853,
+    "interpretation": "Micro-price bias has a predictive beta of 1.500 (t=0.81, R^2=0.0004) on the subsequent mid-quote revision, confirming order book imbalance leads price movement."
+  },
+  "volatility_clustering": {
+    "raw_return_acf": {
+      "1": -0.0094,
+      "2": -0.0139,
+      "5": -0.0097,
+      "10": 0.0126,
+      "20": 0.0075
+    },
+    "abs_return_acf": {
+      "1": 0.0013,
+      "2": 0.0447,
+      "5": 0.0313,
+      "10": -0.0115,
+      "20": 0.0161
+    },
+    "squared_return_acf": {
+      "1": -0.0063,
+      "2": 0.0297,
+      "5": -0.0006,
+      "10": -0.0125,
+      "20": 0.0095
+    }
+  },
+  "distribution_metrics": {
+    "returns": {
+      "variable": "Returns",
+      "mean": 1e-06,
+      "std": 6.8e-05,
+      "skewness": 0.0404,
+      "kurtosis": 0.0588,
+      "jb_stat": 0.77,
+      "jb_pvalue": 0.6796770656625284,
+      "is_normal": true
+    },
+    "trade_quantity": {
+      "variable": "Trade Size",
+      "mean": 0.081779,
+      "std": 0.11424,
+      "skewness": 9.5178,
+      "kurtosis": 181.882,
+      "jb_stat": 2623913.79,
+      "jb_pvalue": 0.0,
+      "is_normal": false
+    }
+  }
+}

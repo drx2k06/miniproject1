@@ -1,0 +1,78 @@
+{
+  "baseline_logistic": {
+    "accuracy": 0.5011,
+    "precision": 0.5073,
+    "recall": 0.4464,
+    "f1_score": 0.4749,
+    "roc_auc": 0.5045,
+    "log_loss": 0.7059,
+    "brier_score": 0.2561,
+    "confusion_matrix": [
+      [
+        127,
+        101
+      ],
+      [
+        129,
+        104
+      ]
+    ]
+  },
+  "random_forest": {
+    "accuracy": 0.5033,
+    "precision": 0.5093,
+    "recall": 0.4678,
+    "f1_score": 0.4877,
+    "roc_auc": 0.5077,
+    "log_loss": 0.7153,
+    "brier_score": 0.2603,
+    "confusion_matrix": [
+      [
+        123,
+        105
+      ],
+      [
+        124,
+        109
+      ]
+    ]
+  },
+  "gradient_boosting": {
+    "accuracy": 0.5423,
+    "precision": 0.55,
+    "recall": 0.5193,
+    "f1_score": 0.5342,
+    "roc_auc": 0.5496,
+    "log_loss": 0.7251,
+    "brier_score": 0.2622,
+    "confusion_matrix": [
+      [
+        129,
+        99
+      ],
+      [
+        112,
+        121
+      ]
+    ]
+  },
+  "pytorch_mlp": {
+    "accuracy": 0.5358,
+    "precision": 0.5446,
+    "recall": 0.4979,
+    "f1_score": 0.5202,
+    "roc_auc": 0.5264,
+    "log_loss": 0.7272,
+    "brier_score": 0.264,
+    "confusion_matrix": [
+      [
+        131,
+        97
+      ],
+      [
+        117,
+        116
+      ]
+    ]
+  }
+}

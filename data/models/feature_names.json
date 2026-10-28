@@ -1,0 +1,20 @@
+[
+  "spread_bps",
+  "order_imbalance_1",
+  "depth_imbalance_3",
+  "weighted_imbalance",
+  "micro_price_bias",
+  "bid_slope",
+  "ask_slope",
+  "slope_ratio",
+  "signed_quantity",
+  "price_to_vwap_bps",
+  "effective_spread",
+  "return_1",
+  "log_return_1",
+  "volatility_10",
+  "volatility_20",
+  "ma_ratio",
+  "rsi_14",
+  "bb_pct_b"
+]

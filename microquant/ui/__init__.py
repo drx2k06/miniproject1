@@ -1,0 +1,3 @@
+"""
+MicroQuant User Interface Module.
+"""
